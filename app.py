@@ -30,10 +30,10 @@ def buy_something(argument1):
         cursor.execute('call items_sale(?,?)',[argument1, pick_item])
         cursor.close()
         conn.close()
-        print('Item number: ',pick_item, 'Purchased successfully')
+        print('Item number:',pick_item,'  Purchased successfully')
         upsell =  input('Continue Shopping? (yes/no)')
 
-        if upsell in ['yes']:
+        if upsell in ['yes','', 'y']:
             continue
         else:
             print('Thanks for shopping')
