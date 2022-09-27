@@ -32,6 +32,7 @@ def buy_something(argument1):
         conn.close()
         print('Item number: ',pick_item, 'Purchased successfully')
         upsell =  input('Continue Shopping? (yes/no)')
+
         if upsell in ['yes']:
             continue
         else:
